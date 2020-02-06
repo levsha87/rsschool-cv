@@ -1,19 +1,22 @@
-# H1 RESUME
+# RESUME
 __First Name:__ Roman
+
 __Last Name:__ Levsha
-__Contact info:__ * phone number(mts) _+375297635734_
-                  * email:_rm.levsha@gmail.com_
-                  * [account github](https://github.com/levsha87)
-# H2 My goal
+
+__Contact info:__ 
+* phone number(mts) _+375297635734_
+* email:_rm.levsha@gmail.com_
+* [account github](https://github.com/levsha87)
+## My goal
 * I want to change my job. I want to earn money with my own head.
 * I want to raise living standards of my family. 
 * I want to study programming on JavaScript language to achieve my goals.
-# H2 My skills
+## My skills
 * Programming languages:
 *JavaScript: beginner level*
 *HTML&CSS: beginner level*
 * Skill to work in team
-# H2 Code examples (tasks with Codewars):
+## Code examples (tasks with Codewars):
 ``` JavaScript
 function getDivisorsCnt(n){
    let i =1;
@@ -28,11 +31,11 @@ function getDivisorsCnt(n){
    return k;
 } 
 ```
-# H2 Experience
+## Experience
 * [Codecademy](https://www.codecademy.com/profiles/rm.levsha87)
 * [Codewars](https://www.codewars.com/users/levsha87)
 * [GitHub account](https://github.com/levsha87)
-# H2 Education 
+## Education 
 * Military Academy of the Republic of Belarus (faculty of interia guard troops) 2005-2010
-# H2 English
+## English
 My English level is A1. I learn English myself. I had no practice in English.
