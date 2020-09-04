@@ -1,0 +1,18 @@
+body {font-family: Times New Roman, Georgia, Serif;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+p {
+    margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 1em; /* Отступ снизу */}
+.code {padding-left: 20px;
+        font-style: italic;
+}
+h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+img {
+    width: 300px;
+}
