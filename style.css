@@ -4,56 +4,76 @@ body {
   margin: 0;
   padding: 0;
 }
-.container {
+
+/*wrapper*/
+.name,
+.basic,
+.main,
+footer {
   width: 1024px;
   margin: 0 auto;
 }
+
 /*header*/
 .name__inf {
   display: flex;
   align-items: baseline;
   background-color: aquamarine;
+  justify-content: space-around;
 }
 .name__inf h1 {
-  margin: 40px;
-  padding: -40px;
+  width: 50%;
   font-size: 36px;
-  margin-left: 60px;
+  margin: 5px 20px;
+  text-align: center;
 }
 .name__inf p {
-  margin: 40px;
-  padding: -40px;
+  width: 50%;
   font-size: 20px;
+  margin: 5px 20px;
+  text-align: center;
 }
 
 /*foto and contacts*/
 .basic__inf {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(250, 245, 245);
 }
 figure {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-figure img,
-figcaption {
-  margin-left: 50px;
+.photoRomaLevsha {
+  width: 190px;
+}
+figure figcaption {
+  width: 190px;
 }
 
 .contact {
-  width: 60%;
-  height: 100%;
+  width: 45%;
+  padding: 10px;
   display: flex;
   letter-spacing: 2px;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+}
+.contact * {
+  width: 60%;
+  padding: 5px;
+  margin: 5px;
 }
 .contact__type {
-  width: 220px;
+  font-size: 22px;
 }
-.contact__type a {
+.contact__value {
+  font-size: 18px;
   text-decoration: none;
 }
-.contact__type a:hover {
+.contact__value:hover {
   color: red;
 }
 
@@ -67,30 +87,37 @@ figcaption {
   margin: 20px;
   text-shadow: 2px 2px 3px gray;
 }
-.my_goal {
+.my_goal,
+.my_skills,
+.various__skills,
+.code__example {
   width: 50%;
 }
 .my_goal ol {
   height: 60%;
   width: 85%;
+  font-size: 20px;
+  padding: 5px 20px 5px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.my_skills {
-  width: 50%;
-}
+
 .my_skills p {
-  margin-left: 30px;
+  margin: 10px 40px 5px 40px;
+  font-size: 24px;
 }
 .my_skills ul {
   margin-left: 30px;
+  margin-top: 5px;
+  font-size: 18px;
 }
 .my_skills ul li {
   padding: 3px;
+  letter-spacing: 1px;
 }
+
 .various__skills {
-  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -99,14 +126,15 @@ figcaption {
 }
 .experience ul {
   margin-left: 30px;
+  font-size: 20px;
 }
 .experience ul li {
   padding: 3px;
 }
-.experience ul li a {
+.subtitle__link {
   text-decoration: none;
 }
-.experience ul li a:hover {
+.subtitle__link:hover {
   color: red;
 }
 
@@ -114,31 +142,32 @@ figcaption {
   height: 33%;
 }
 .education p {
-  padding: 20px;
+  padding: 5px 20px;
+  font-size: 20px;
   line-height: 1.5;
 }
 .level_eng {
   height: 33%;
 }
 .level_eng p {
-  padding: 20px;
+  padding: 5px 20px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
-.code__example {
-  width: 50%;
-}
 .code__example pre {
   line-height: 1.5;
   padding: 20px;
+  font-size: 18px;
 }
 .author__name {
+  margin: 0;
+  padding-right: 30px;
   background-color: rgb(255, 235, 235);
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  text-align: right;
 }
 .author__name a {
+  padding-left: 20px;
   text-decoration: none;
 }
 .author__name a:hover {
@@ -148,20 +177,18 @@ figcaption {
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (max-width: 480px) {
   .name__inf {
-    width: 100%;
+    width: 480px;
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    align-items: center;
   }
   .name__inf h1 {
-    margin: 5px;
-    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
     font-size: 30px;
-    margin-left: 60px;
   }
   .name__inf p {
-    margin: 30px;
-    padding: 5px;
+    width: 100%;
     font-size: 20px;
   }
 
@@ -170,85 +197,61 @@ figcaption {
     flex-direction: column;
     background-color: rgb(250, 245, 245);
   }
-  figure {
-    width: 100%;
+  .photoRomaLevsha {
+    width: 250px;
   }
-  figure img,
-  figcaption {
-    margin: 0 auto;
+  figure figcaption {
+    width: 250px;
+    font-size: 18px;
   }
 
   .contact {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    letter-spacing: 2px;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 480px;
+  }
+  .contact * {
+    padding: 1px;
+    margin: 0px;
   }
   .contact__type {
-    font-size: 20px;
-    margin: 0 auto;
+    font-size: 24px;
   }
-
+  .contact__value {
+    font-size: 20px;
+  }
+  .my_goal,
+  .my_skills,
+  .various__skills,
+  .code__example {
+    width: 45%;
+  }
   .main__inf {
     flex-direction: column;
   }
   .main__inf h2 {
     margin: 18px;
-    text-shadow: 2px 2px 3px gray;
-  }
-  .my_goal {
-    width: 50%;
   }
   .my_goal ol {
-    height: 60%;
     width: 70%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
   .my_skills {
-    width: 70%;
-    font-size: 20px;
-  }
-  .various__skills {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    font-size: 18px;
   }
 
   .experience {
-    height: 34%;
-    font-size: 20px;
-  }
-  .experience ul {
-    margin-left: 30px;
-  }
-  .experience ul li {
-    padding: 3px;
-  }
-  .experience ul li a {
-    text-decoration: none;
-  }
-  .experience ul li a:hover {
-    color: red;
+    font-size: 18px;
   }
 
   .education {
-    height: 33%;
-    font-size: 20px;
+    font-size: 18px;
   }
+
   .education p {
     width: 70%;
     padding: 20px;
     line-height: 1.5;
   }
   .level_eng {
-    width: 70%;
-    font-size: 20px;
-    height: 33%;
+    font-size: 18px;
   }
   .level_eng p {
     padding: 20px;
@@ -256,29 +259,19 @@ figcaption {
   }
 
   .code__example {
-    width: 70%;
+    width: 45%;
   }
   .code__example h2 {
     width: 60%;
   }
   .code__example pre {
-    line-height: 1.5;
+    line-height: 1.2;
+    margin-left: -50px;
     padding: 0px;
   }
   .author__name {
-    background-color: rgb(255, 235, 235);
-    display: flex;
-    flex-direction: column;
-  }
-  .author__name p {
-    margin: auto 80px;
-  }
-  .author__name a {
-    width: 20%;
-    text-decoration: none;
-    margin: auto 80px;
-  }
-  .author__name a:hover {
-    color: rgb(108, 110, 38);
+    width: 40%;
+    margin-left: 20px;
+    text-align: left;
   }
 }
