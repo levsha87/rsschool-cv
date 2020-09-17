@@ -7,7 +7,7 @@ body {
 
 /*wrapper*/
 .name,
-.basic,
+.basic__inf,
 .main,
 footer {
   width: 1024px;
@@ -15,20 +15,20 @@ footer {
 }
 
 /*header*/
-.name__inf {
+.name {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
   background-color: aquamarine;
   justify-content: space-around;
 }
-.name__inf h1 {
-  width: 50%;
+.name h1 {
   font-size: 36px;
   margin: 5px 20px;
   text-align: center;
 }
-.name__inf p {
-  width: 50%;
+.name p {
   font-size: 20px;
   margin: 5px 20px;
   text-align: center;
@@ -36,36 +36,29 @@ footer {
 
 /*foto and contacts*/
 .basic__inf {
+ 
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: rgb(250, 245, 245);
+  align-items: center;
+}
+.photoRomaLevsha,
+  .photoRomaLevsha {
+  width: 190px;
+}
+ 
+.contact {
+  letter-spacing: 2px;
+  line-height: 2.5;
+  padding: 0 50px;
 }
 figure {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.photoRomaLevsha {
-  width: 190px;
-}
-figure figcaption {
-  width: 190px;
+  padding: 0 50px;
+  
 }
 
-.contact {
-  width: 45%;
-  padding: 10px;
-  display: flex;
-  letter-spacing: 2px;
-  flex-direction: column;
-  align-items: center;
-}
-.contact * {
-  width: 60%;
-  padding: 5px;
-  margin: 5px;
-}
 .contact__type {
   font-size: 22px;
 }
@@ -81,6 +74,7 @@ figure figcaption {
 .main__inf {
   background-color: rgb(250, 245, 245);
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .main__inf h2 {
@@ -91,16 +85,12 @@ figure figcaption {
 .my_skills,
 .various__skills,
 .code__example {
-  width: 50%;
+  flex-basis: 50%;
 }
 .my_goal ol {
-  height: 60%;
-  width: 85%;
   font-size: 20px;
   padding: 5px 20px 5px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  line-height: 1.5;
 }
 
 .my_skills p {
@@ -174,6 +164,21 @@ figure figcaption {
   color: rgb(108, 110, 38);
 }
 
+@media only screen and (max-width: 600px) {
+  .name,
+  .basic__inf,
+  .main,
+  footer {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .my_goal,
+.my_skills,
+.various__skills,
+.code__example {
+  flex-basis: 100%;
+}
+}
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (max-width: 480px) {
   .name__inf {
@@ -198,7 +203,7 @@ figure figcaption {
     background-color: rgb(250, 245, 245);
   }
   .photoRomaLevsha {
-    width: 250px;
+    width: 300px;
   }
   figure figcaption {
     width: 250px;
