@@ -1,0 +1,357 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/*wrapper*/
+.name,
+.basic__inf,
+.main,
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*header*/
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background-color: aquamarine;
+  justify-content: space-around;
+}
+.name h1 {
+  font-size: 36px;
+  margin: 5px 20px;
+  text-align: center;
+}
+.name p {
+  font-size: 20px;
+  margin: 5px 20px;
+  text-align: center;
+}
+
+/*foto and contacts*/
+.basic__inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(250, 245, 245);
+  align-items: center;
+}
+.photoRomaLevsha,
+figcaption {
+  width: 190px;
+}
+ 
+.contact {
+  letter-spacing: 2px;
+  line-height: 2.5;
+  padding: 0 50px;
+}
+
+figure {
+  padding: 0 50px;
+}
+
+.contact__type {
+  font-size: 22px;
+}
+
+.contact__value {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact__value:hover {
+  color: red;
+}
+
+/*main*/
+.main__inf {
+  background-color: rgb(250, 245, 245);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main__inf h2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px gray;
+}
+
+.my_goal,
+.my_skills,
+.various__skills,
+.code__example {
+  flex-basis: 50%;
+}
+
+.my_goal ol {
+  font-size: 20px;
+  padding: 5px 20px 5px 50px;
+  line-height: 1.5;
+}
+
+.my_skills p {
+  margin: 10px 40px 5px 40px;
+  font-size: 24px;
+}
+
+.my_skills ul {
+  margin-left: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.my_skills ul li {
+  padding: 3px;
+  letter-spacing: 1px;
+}
+
+.various__skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience {
+  height: 34%;
+}
+
+.experience ul {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.experience ul li {
+  padding: 3px;
+}
+
+.subtitle__link {
+  text-decoration: none;
+}
+
+.subtitle__link:hover {
+  color: red;
+}
+
+.education {
+  height: 33%;
+}
+
+.education p {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.level_eng {
+  height: 33%;
+}
+
+.level_eng p {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.code__example pre {
+  line-height: 2;
+  padding: 20px;
+  padding-left: 50px;
+  margin-top: 0px;
+  font-size: 18px;
+}
+footer {
+  display: flex;
+  background-color: rgb(255, 235, 235);
+  align-items: center;
+  justify-content: space-between;
+}
+.author__name {
+  margin-left: 20px;
+  
+  
+}
+footer a {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+}
+
+.author__name a:hover {
+  color: rgb(108, 110, 38);
+}
+
+@media only screen and (max-width: 860px) {
+  .name,
+  .basic__inf,
+  .main,
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .basic__inf {
+    align-items: flex-start;
+  }
+
+  .photoRomaLevsha, figcaption {
+  width: 170px;
+  }
+  figure {
+    padding: 0px 50px;
+    margin: 16px 0px;
+    
+  }
+
+  .contact {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 0px;
+  }
+
+  .my_skills p {
+    padding-top: 10px;
+  }
+
+  .my_skills ul li {
+    padding: 10px;
+  }
+  .author__name {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .author__name a {
+    margin-left: 320px;
+  } 
+}
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (max-width: 700px) {
+  .name,
+  .basic__inf,
+  .main,
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name h1 {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+
+  .name p {
+    font-size: 20px;
+  }
+
+  .basic__inf {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 245, 245);
+    align-items: center;
+  }
+
+  figure {
+    padding: 0px;
+  }
+
+  .photoRomaLevsha {
+    width: 300px;
+  }
+  figure figcaption {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .contact {
+    padding: 0 20px;
+    line-height: 1;
+  }
+  
+  .contact__type {
+    font-size: 24px;
+  }
+
+  .contact__value {
+    font-size: 20px;
+  }
+  
+  .main__inf {
+    flex-direction: column;
+  }
+
+  .main__inf h2 {
+    margin: 5px 30px;
+  }
+
+  .main__inf ol {
+    margin: 5px 0px;
+  }
+
+  .my_skills {
+    font-size: 18px;
+  }
+  .my_skills ul{
+   margin-bottom: 5px; 
+  }
+
+  .my_skills ul li{
+    padding: 5px; 
+  }
+
+  .experience {
+    font-size: 18px;
+  }
+
+  .experience .subtitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .education {
+    font-size: 18px;
+  }
+
+  .education p {
+    padding: 5px;
+    line-height: 1.5;
+    margin: 5px 20px;
+  }
+
+  .level_eng {
+    font-size: 18px;
+  }
+
+  .level_eng p {
+    padding: 5px;
+    line-height: 1.5;
+    margin: 5px 20px;
+  }
+
+  .code__example pre {
+    line-height: 1;
+    margin: 20px 0px 10px 80px;
+    padding: 5px;
+  }
+
+  .author__name {
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .author__name a {
+    margin: 0;
+   padding-left: 100px;
+  }
+}
